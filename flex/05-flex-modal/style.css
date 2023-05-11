@@ -16,13 +16,20 @@ body {
 }
 
 .modal {
+  display: flex;
+  flex-direction: row;
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 16px;
+  gap: 16px;
 }
 
 .icon {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
   color: royalblue;
   font-size: 26px;
   font-weight: 700;
@@ -33,9 +40,31 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  align-self: flex-start;
+  flex-shrink: 0;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.header {
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .close-button {
+  display: flex;
+  flex-direction: column;
   background: #eee;
   border-radius: 50%;
   color: #888;
@@ -46,6 +75,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  align-self: flex-start;
+  flex-shrink: 0;
 }
 
 button {
